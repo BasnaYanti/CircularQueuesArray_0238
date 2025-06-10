@@ -50,6 +50,13 @@ public:
     }
     cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
 
-
+    //Cek jika antrian hanya memiliki satu max_elemen
+    if (FRONT == REAR)
+    {
+            FRONT = -1;
+            REAR = -1;
+    }
+    
 }
+
 };
