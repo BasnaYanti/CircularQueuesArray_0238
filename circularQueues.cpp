@@ -1,28 +1,75 @@
+/**
+ * @mainpage Documentation circular Queues
+ * 
+ * @section Introduction
+ * This Project from struktur data
+ * This project use struktur data queues inmplements circular array.
+ * 
+ * @section Operations
+ * - en queue for insert elements into queues
+ * - de queue for delete elements from queues
+ * - show data / display
+ * 
+ * @section How to use
+ * 1. Insert
+ * 2. Delete
+ * 3. Display
+ * 4. Exit
+ * 
+ * @author your name (you@domain.com)
+ * - Nama : Basna yanti djakiman
+ * - Nim : 20240140238
+ * - Kelas : E
+ * 
+ * @brief 
+ * @version 0.1
+ * @date 2025-06-23
+ * 
+ * @copyright Gibran@umy.ac.id (c) 2025
+ * 
+ */
 #include <iostream>
 using namespace std;
+
+/**
+ * @class Queues
+ * @brief This class is for operation queues
+ * 
+ */
 
 class Queues 
 {
 
 private:
-    int FRONT, REAR, max = 5;
-    int queue_array[5];
+    int FRONT; /// private variable front for indicate first element
+    int REAR; /// private variable rear for indicate the last element
+    int max = 5; /// private variable max for maximum capasity of element
+    int queue_array[5]; /// private variable queue
 
 public:
-    Queues()
+/**
+ * @brief Construct a new Queues object
+ * set default queues null
+ * with front = -1 rear = -1
+ */
+   Queues()
     {
         FRONT = -1;
         REAR = -1;
-    }
+    }  
 
+    /**
+     * @brief method for entering data into a queues
+     * 
+     */
     void insert()
     {
-        int num;
+        int num; 
         cout << "Enter a number: ";
-        cin >> num;
-        cout << endl;
+        cin >> num;  
+        cout << endl; 
 
-        // Cek apakah antrian penuh
+     // Cek apakah antrian penuh
         if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1))
         {
             cout << "\nQueue overflow\n";
@@ -42,6 +89,11 @@ public:
         queue_array[REAR] = num;
     }
 
+    /**
+     * @brief method for removing the front element from the queues.
+     * 
+     * 
+     */
     void remove()
 {
     //Cek apakah atrian kosong
@@ -68,10 +120,14 @@ public:
     }
 }
 
+/**
+ * @brief Displays all elements in the queue.
+ * 
+ */
 void display()
     {
-        int FRONT_position = FRONT;
-        int REAR_position = REAR;
+        int FRONT_position = FRONT; /// Stores the current front index of the queue
+        int REAR_position = REAR; /// Stores the current rear index of the queue
 
         //Cek apakah antrian kosong
         if (FRONT == -1)
@@ -113,10 +169,15 @@ void display()
     }
 };
 
+/**
+ * @brief Entry point of the program.
+ * 
+ * @return int 
+ */
 int main()
 {
-    Queues q;
-    char ch;
+    Queues q; /// Object of class Queues to manage queue operations
+    char ch; /// Variable to store the user’s menu choice
 
     while (true)
     {
