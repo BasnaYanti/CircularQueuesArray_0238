@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../circular_queues_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'circularQueues.cpp']]]
+  ['insert_0',['insert',['../class_queues.html#aca79bcfa6868dbc1a26b7a634d55f2df',1,'Queues']]]
 ];

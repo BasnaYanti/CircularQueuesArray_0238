@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['queues_0',['Queues',['../index.html',1,'Documentation circular Queues'],['../class_queues.html',1,'Queues'],['../class_queues.html#a27d3ceab61177fd964098d2e279e45b6',1,'Queues::Queues()']]]
+  ['main_0',['main',['../circular_queues_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'circularQueues.cpp']]],
+  ['max_1',['max',['../class_queues.html#a22149b6d4c6183800c339325f958103d',1,'Queues']]]
 ];
